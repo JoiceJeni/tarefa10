@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cálculo da Média Aritmética</title>
+  <script>
+    function calcularMedia() {
+      let numeros = [];
+      let soma = 0;
+
+      for (let i = 0; i < 5; i++) {
+        let numero = Number(prompt("Digite um número:"));
+        numeros.push(numero);
+        soma += numero;
+      }
+
+      let media = soma / 5;
+      alert("A média aritmética dos números é: " + media);
+    }
+  </script>
+</head>
+<body>
+  <h1>Cálculo da Média Aritmética</h1>
+  <button onclick="calcularMedia()">Calcular</button>
+</body>
+</html>
+
+
